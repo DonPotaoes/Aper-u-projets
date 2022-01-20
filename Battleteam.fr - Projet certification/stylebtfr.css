@@ -1,0 +1,144 @@
+@font-face {
+    font-family: bffontb;
+    src: url(BF_Modernista-Light.ttf);
+}
+
+header  {
+   /* background-color:rgba(0, 0, 0, 0.5);*/
+    color: white; 
+    width: 97.5%; 
+   /* height: max-content; */
+    position: fixed; 
+    top:0px; 
+    margin-top: 0px; 
+    padding-bottom:8px; 
+    padding-left: 25px;
+    justify-content: space-around;
+    display:flex;
+    flex-direction: row;
+
+
+}
+
+#VideoOfTheWeek {
+    margin-top: 150px;/* wallah faut faire un truc genre un <float> qui marche*/
+}
+
+body {
+    background-image: url(1188618.png) ;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:bffontb,Georgia, 'Times New Roman', Times, serif;
+}
+section {
+    background-image: url(carbon2.jpg);
+    background-size:cover;
+   /* background-color:rgba(0, 0, 0, 0.5);*/
+    color: white; 
+    height: max-content; 
+    width: 68%; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 35px; 
+    margin-left: 15%; 
+    box-shadow: 9px 8px 9px black;
+}
+nav {
+    height: 50px;
+    width:auto;
+    color:#f26a1b;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(carbon2.jpg);
+    background-size: cover;
+    padding:0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    box-shadow: 9px 8px 9px black;
+    padding-right: 25px;
+    
+}
+
+li {
+    display:inline
+}
+
+nav a:hover{
+    color: white;
+    text-shadow: 5px 5px 5px#414243;
+}
+nav a{
+
+    text-decoration: none;
+    color:#26ffdf;
+}
+
+a::before,
+a::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(45deg,#08a696,#26ffdf,#f26a1b,#08a696);
+    width:100%;
+    height:100%;
+    background-size: 600%;
+    z-index:-1;
+    transform:scale(1.02);
+    animation: animate 20s;
+    animation-iteration-count: infinite;
+    
+}
+/*a::after {
+    filter: blur(15px);
+}*/
+
+@keyframes animate {
+  0% {background-position:0 0;}
+  50% {background-position: 300% 0;}
+  100% {background-position: 0 0;}
+}
+
+footer {
+    color: white; 
+    width: 100%; 
+    height: max-content; 
+    bottom:0;  
+    justify-content: center;
+    position:fixed;
+    left:0;
+    padding-top: 3px;
+}
+
+footer::before,
+footer::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(45deg,#08a696,#26ffdf,#f26a1b,#08a696);
+    width:100%;
+    height:100%;
+    background-size: 600%;
+    z-index:-1;
+    transform:scale(1.02);
+    animation: animate 20s;
+    animation-iteration-count: infinite;
+}
+.footer {
+    background-image: url(carbon2.jpg);
+    background-size: cover;
+    margin:0;
+    /*line-height: 40px;*/
+    bottom:0;
+    padding-bottom:1px;
+    padding-top: 1px;
+    text-align:center;
+}
+#forminscription {
+    margin-top:100px;
+    color:white;
+    display:flex;
+    justify-content: center;
+}

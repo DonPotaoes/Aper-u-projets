@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="FR">
+        <head>
+            <meta charset="uft-8">
+            <title>A table!</title>
+            <link rel="stylesheet" href="a-table.css">
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body{
+                    height: 100vh;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background: whitesmoke;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="cookies.html">Cookie</a></li>
+                        <li><a href="salade.html">Salade</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <canvas width="600" height="600" style="background-color: whitesmoke;"></canvas>
+                <script>
+                    const canvas = document.querySelector('canvas');
+                    const ctx = canvas.getContext('2d');
+                    ctx.beginPath()
+                    ctx.lineWidth=3;
+                    ctx.arc(300, 300, 290, 0, 2 * Math.PI);
+                    ctx.fillStyle = "#B4A474";
+                    ctx.stroke();
+                    ctx.fill();
+
+                    function pepite(x,y){
+                        ctx.fillStyle = "#392419";
+                        ctx.beginPath();
+                        ctx.arc(x, y, 20, 0 ,2 * Math.PI);
+                        ctx.stroke();
+                        ctx.fill();
+                    };
+                    pepite(120, 250);
+                    pepite(180, 460);
+                    pepite(240, 120);
+                    pepite(370, 530);
+                    pepite(510, 340);
+                    pepite(420, 270);
+                    pepite(310, 195);
+                    pepite(350, 360);
+                    pepite(450, 115);
+                    pepite(260, 345);
+                </script>
+            </section>
+
+            <footer>
+
+            </footer>
+        </body>
+    </html>
